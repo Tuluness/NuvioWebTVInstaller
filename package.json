@@ -9,7 +9,8 @@
     "start": "electron .",
     "dist": "electron-builder",
     "dist:win": "electron-builder --win",
-    "dist:mac": "electron-builder --mac"
+    "dist:mac": "electron-builder --mac",
+    "dist:linux": "electron-builder --linux"
   },
   "dependencies": {
     "@webos-tools/cli": "^3.2.4",
@@ -52,6 +53,16 @@
     },
     "portable": {
       "artifactName": "Nuvio-WebTV-Installer-${version}-Windows.${ext}"
+    },
+    "linux": {
+      "icon": "build.icon.png",
+      "target": [
+      {
+        "target": "AppImage",
+        "arch": ["x64"]
+      }
+      ],
+      "artifactName": "Nuvio-WebTV-Installer-${version}-Linux.${ext}"
     },
     "mac": {
       "icon": "icon.icns",
