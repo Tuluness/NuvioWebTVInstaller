@@ -1,5 +1,5 @@
 {
-  "githubRepo": "NuvioMedia/NuvioWeb",
+  "githubRepo": "Tuluness/NuvioWeb",
   "webos": {
     "appId": "space.nuvio.webos",
     "assetPattern": "\\.ipk$"
